@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accedi - SonoErasmus+</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <header>
+            <h1>SonoErasmus+</h1>
+        </header>
+
+        <h2>Accedi</h2>
+        <form id="loginForm" action="login.php" method="POST">
+            <label for="username_or_email">Username / e-mail:</label><br>
+            <input type="text" id="username_or_email" name="username_or_email" required><br>
+            
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            
+            <button type="submit">Accedi</button>
+        </form>
+
+        <div class="create-account-section">
+            <p>Non sei ancora registrato?</p>
+            <a href="register.html" class="create-account-button">Crea un account</a>
+        </div>
+    </div>
+
+    <div class="error-messages">
+        <span id="loginError" class="error">Utente non trovato o password errata.</span>
+    </div>
+
+    <script src="assets/js/login.js"></script>
+</body>
+</html>

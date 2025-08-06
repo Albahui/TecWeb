@@ -1,15 +1,14 @@
-/* Stili generali della pagina */
+/* Stili Generali */
 body {
+    background-color: #e9ebee;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    padding: 0;
+    line-height: 1.6;
+    color: #1c1e21;
 }
 
+/* Stili per i form di Login e Register */
 .form-container {
     background: #fff;
     padding: 20px 40px;
@@ -18,62 +17,104 @@ body {
     width: 100%;
     max-width: 400px;
     box-sizing: border-box;
+    margin: 50px auto;
 }
 
-/* Stili per l'intestazione */
-h2 {
+.form-container h1 {
     text-align: center;
-    color: #333;
+    color: #1c1e21;
+    font-size: 28px;
+    margin: 0 0 20px 0;
 }
 
-/* Stili per il form di registrazione */
-form {
-    padding: 0;
-    margin: 0;
+.form-container h2 {
+    text-align: center;
+    color: #1c1e21;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
-/* Stili per le etichette */
 label {
     display: block;
     margin-top: 10px;
-    font-weight: bold;
-    color: #555;
+    font-weight: 600;
+    color: #606770;
 }
 
-/* Stili per i campi di input */
 input[type="text"],
 input[type="email"],
 input[type="password"] {
     width: 100%;
-    padding: 10px;
+    padding: 12px 10px;
     margin-top: 5px;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 6px;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
-/* Stili per il pulsante di invio */
+/* Stili per il layout in linea dei campi del form */
+.form-group-inline {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.form-group-inline .form-group {
+    flex: 1;
+}
+
+.form-group-inline label {
+    margin-top: 0;
+}
+
+.error {
+    color: #d9534f;
+    font-size: 0.9em;
+    display: none;
+    margin-top: 5px;
+}
+
 button[type="submit"] {
     width: 100%;
-    padding: 10px;
-    background-color: #007bff;
+    padding: 12px;
+    background-color: #1877f2;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
     font-size: 16px;
+    font-weight: bold;
     margin-top: 20px;
     transition: background-color 0.3s ease;
 }
 
 button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #166fe5;
 }
 
-/* Stili per i messaggi di errore */
-.error {
-    color: #d9534f;
-    font-size: 0.9em;
-    display: none; /* Cruciale: i messaggi di errore sono nascosti di default */
-    margin-top: 5px;
+.create-account-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.create-account-section p {
+    margin-bottom: 10px;
+    color: #606770;
+}
+
+.create-account-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #42b72a;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.create-account-button:hover {
+    background-color: #36a420;
 }
